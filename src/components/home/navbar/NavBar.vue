@@ -2,12 +2,12 @@
   <div class="nav-bar">
     <div><van-icon name="chat-o" size="40" /></div>
     <div class="top-content">
-        <span class="active">我的</span>
-        <span>发现</span>
+        <span >我的</span>
+        <span class="active">发现</span>
         <span>云村</span>
         <span>视频</span>
     </div>
-    <div><van-icon name="chat-o" size="40" /></div>
+    <div @click="$router.push('/search')"><van-icon name="search" size="40" /></div>
   </div>
 </template>
 

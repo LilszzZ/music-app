@@ -9,6 +9,17 @@
     <van-icon name="notes-o" size="40"/> 
     </div>
   </div>
+  <div class="center-item">
+
+    <img :src="playlist.coverImgUrl" alt="" class="left-img"/>
+
+  </div>
+  <div class="footer-item">
+    <van-icon name="chat-o" badge="40" size="40" />
+    <van-icon name="service-o" size="40"/>
+     <van-icon name="down" size="40" />
+     <van-icon name="replay" size="40"/>
+  </div>
 </template>
 
 <script>
@@ -46,9 +57,21 @@ export default {
     .bgimg{
         width: 100%;
         height: 10rem;
-        position: fixed;
+        position: absolute;
         z-index: -1;
         filter: blur(30px);
     }
+}
+.center-item{
+  display: flex;
+  .left-img{
+    width: 4rem;
+    height: 4rem;
+    padding: .2rem;
+  }
+}
+.footer-item{
+  display: flex;
+  justify-content: space-around;
 }
 </style>
